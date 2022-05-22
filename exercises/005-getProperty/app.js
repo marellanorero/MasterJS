@@ -1,11 +1,9 @@
 function getProperty(obj, key) {
   // your code here
-  for(key in obj){
-    if(obj[key]){
-      return obj[ket];
-    } else {
-      return undefined;
-    }
+  if(key in obj){
+    return obj[key]
+  } else {
+    return undefined
   }
 }
 
