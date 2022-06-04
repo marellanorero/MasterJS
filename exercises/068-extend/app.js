@@ -9,4 +9,10 @@ var obj2 = {
 
 function extend(obj1, obj2) {
     // your code here
+    return Object.assign(obj1, obj2);
 }
+
+extend(obj1, obj2);
+
+console.log(obj1); // --> {a: 1, b: 2, c: 3}
+console.log(obj2); // --> {b: 4, c: 3}
