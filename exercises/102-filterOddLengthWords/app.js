@@ -1,5 +1,10 @@
 function filterOddLengthWords(words) {
-    // your code here
+     // your code here
+     for(let i = 0; i < words.length; i++){
+         if(words[i].length % 2 !== 0){
+             return words[i]
+         }
+     }
 }
 
 var output = filterOddLengthWords(['there', 'it', 'is', 'now']);

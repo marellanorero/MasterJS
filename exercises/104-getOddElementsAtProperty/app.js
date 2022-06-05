@@ -4,6 +4,11 @@ var obj = {
 
 function getOddElementsAtProperty(obj, key) {
     // your code here
+    for(let i = 0; i < obj.key.length; i++){
+      if(obj.key[i] % 2 !== 0){
+        return obj.key[i]
+      }
+    }
 }
 
 var output = getOddElementsAtProperty(obj, 'key');
