@@ -1,10 +1,12 @@
+let newArray = []
 function filterOddLengthWords(words) {
      // your code here
      for(let i = 0; i < words.length; i++){
          if(words[i].length % 2 !== 0){
-             return words[i]
+             newArray.push(words[i])
          }
      }
+     return newArray
 }
 
 var output = filterOddLengthWords(['there', 'it', 'is', 'now']);
